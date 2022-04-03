@@ -1,0 +1,67 @@
+@import 'variables';
+// both sizes
+
+.card {
+	background-color: var(--card-background);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	p {
+		color: var(--text-main);
+		font-weight: bold;
+		font-size: 14px;
+	}
+	p.follower-number {
+		color: var(--text-contrast);
+		font-size: 35px;
+		font-weight: 600;
+		font-family: $font;
+		margin: 0;
+	}
+	p.followers {
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: 300;
+	}
+	.red-text {
+		color: $bright-red;
+	}
+	.green-text {
+		color: $lime-green;
+	}
+}
+.card-flex {
+	display: flex;
+	justify-content: center;
+}
+.card-large {
+	width: 250px;
+	height: 250px;
+	margin: 1em;
+}
+.card.facebook-border {
+	border-top: 4px solid $facebook;
+}
+.card.twitter-border {
+	border-top: 4px solid $twitter;
+}
+.card.instagram-border {
+	border-width: 4px 0 0 0;
+	border-style: solid;
+	border-image: linear-gradient(
+			to right,
+			hsl(37, 97%, 70%),
+			hsl(329, 70%, 58%)
+		)
+		1;
+}
+.card.youtube-border {
+	border-top: 4px solid $youtube;
+}
+.green-text::before {
+	content: url('../images/icon-up.svg');
+}
+.red-text:before {
+	content: url('../images/icon-down.svg');
+}

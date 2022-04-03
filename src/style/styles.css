@@ -1,0 +1,22 @@
+:root {
+  --background: hsl(0, 0%, 100%);
+  --background-header: hsl(225, 100%, 98%);
+  --card-background: hsl(227, 47%, 96%);
+  --text-main: hsl(228, 12%, 44%);
+  --text-contrast: hsl(230, 17%, 14%);
+  --slider: white;
+}
+
+.dark {
+  --background: hsl(230, 17%, 14%);
+  --background-header: hsl(232, 19%, 15%);
+  --card-background: hsl(228, 28%, 20%);
+  --text-main: hsl(228, 34%, 66%);
+  --text-contrast: hsl(0, 0%, 100%);
+  --slider: hsl(232, 19%, 15%);
+}
+
+* {
+  font-family: "Inter";
+}
+/*# sourceMappingURL=styles.css.map */
