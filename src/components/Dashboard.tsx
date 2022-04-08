@@ -1,8 +1,7 @@
 import '../style/dashboard.css';
 import CardPrimary from './CardPrimary';
 
-const toggleColor = document.getElementById('toggle-color');
-function switchTheme(e: any) {
+function switchTheme() {
 	document.body.classList.toggle('dark');
 }
 export default function Dashboard() {
@@ -19,7 +18,7 @@ export default function Dashboard() {
 							type='checkbox'
 							onClick={switchTheme}
 						/>
-						<span className='slider round'></span>
+						<span className='slider round'/>
 					</label>
 				</div>
 			</header>

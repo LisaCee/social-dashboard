@@ -5,6 +5,7 @@
   --text-main: hsl(228, 12%, 44%);
   --text-contrast: hsl(230, 17%, 14%);
   --slider: white;
+  --hover: hsla(260, 18%, 90%, 1);
 }
 
 .dark {
@@ -14,29 +15,21 @@
   --text-main: hsl(228, 34%, 66%);
   --text-contrast: hsl(0, 0%, 100%);
   --slider: hsl(232, 19%, 15%);
+  --hover: hsla(230, 21%, 31%, 0.78);
 }
 
 .card {
   background-color: var(--card-background);
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
 .card p {
   color: var(--text-main);
   font-weight: bold;
   font-size: 14px;
 }
-
 .card p.follower-number {
   color: var(--text-contrast);
   font-size: 35px;
@@ -44,34 +37,31 @@
   font-family: "Inter";
   margin: 0;
 }
-
 .card p.followers {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 300;
 }
-
 .card .red-text {
   color: #dc414c;
 }
-
 .card .green-text {
   color: #1db489;
 }
+.card:hover {
+  background: var(--hover);
+}
 
 .card-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .card-large {
   width: 250px;
   height: 250px;
   margin: 1em;
+  border-radius: 5px;
 }
 
 .card.facebook-border {
@@ -85,20 +75,11 @@
 .card.instagram-border {
   border-width: 4px 0 0 0;
   border-style: solid;
-  -o-border-image: linear-gradient(to right, #fdc468, #df4996) 1;
-     border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996)) 1;
-     border-image: linear-gradient(to right, #fdc468, #df4996) 1;
+  border-image: linear-gradient(to right, #fdc468, #df4996) 1;
 }
 
 .card.youtube-border {
   border-top: 4px solid #c4032a;
 }
 
-.green-text::before {
-  content: url("../images/icon-up.svg");
-}
-
-.red-text:before {
-  content: url("../images/icon-down.svg");
-}
 /*# sourceMappingURL=card.css.map */
